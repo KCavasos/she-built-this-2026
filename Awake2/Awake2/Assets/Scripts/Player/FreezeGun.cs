@@ -33,7 +33,9 @@ public class FreezeGun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.DrawRay(_mainCamera.transform.position, _mainCamera.transform.forward * 1000, Color.red);
+        //Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward * 1000, Color.red, 1.0f);
+        //Debug.DrawRay(new Vector3(0,0,0), new Vector3(0,10,0), Color.red, 1.0f);
+        
         if (_input.fire)
         {
             FireWeapon();
@@ -53,16 +55,17 @@ public class FreezeGun : MonoBehaviour
 
 
         //Quaternion LookDownCameraAim = Quaternion.LookRotation();
-        GameObject bullet = Instantiate(BulletPrefab, _mainCamera.transform.position, _mainCamera.transform.rotation);
+        GameObject bullet = Instantiate(BulletPrefab, Camera.main.transform.position, Camera.main.transform.rotation);
         bullet.transform.LookAt(_mainCamera.transform.forward * 1000);
         
-        Bullet bulletScript = bullet.GetComponent<Bullet>();
-        bulletScript.direction = -_mainCamera.transform.right;
+        //Bullet bulletScript = bullet.GetComponent<Bullet>();
+        //bulletScript.direction = Camera.main.transform.forward;
         
+        Debug.DrawLine(Camera.main.transform.position, Camera.main.transform.position + Camera.main.transform.forward * 10, Color.red, 1.0f);
         
         //Debug.Log("Fire!");
         RaycastHit hit;
-        Physics.Raycast(_mainCamera.transform.position, _mainCamera.transform.forward, out hit, MaxDistance, TargetMask);
+        Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, MaxDistance, TargetMask);
         
         if (hit.collider != null)
         {

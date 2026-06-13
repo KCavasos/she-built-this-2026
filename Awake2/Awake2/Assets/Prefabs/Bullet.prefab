@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54981727ead76f5e28eed4295ded0df9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bullet
-  bulletSpeed: 1
+  bulletSpeed: 50
   direction: {x: 0, y: 0, z: 0}
 --- !u!1001 &8192131209126748769
 PrefabInstance:
