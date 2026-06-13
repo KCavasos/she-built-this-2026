@@ -21,6 +21,7 @@ namespace StarterAssets
 		public bool cursorInputForLook = true;
 
 
+		public bool fire;
 
 #if ENABLE_INPUT_SYSTEM
 		
@@ -46,7 +47,14 @@ namespace StarterAssets
 
 		public void OnSprint(InputValue value)
 		{
+			//print("StarterAssetInput Sprint. IsPressed: " + value.isPressed);
 			SprintInput(value.isPressed);
+		}
+		
+		public void OnFire(InputValue value)
+		{
+			//print("StarterAssetInput Fire. IsPressed: " + value.isPressed);
+			FireInput(value.isPressed);
 		}
 #endif
 
@@ -71,6 +79,11 @@ namespace StarterAssets
 		public void JumpInput(bool newJumpState)
 		{
 			jump = newJumpState;
+		}
+		
+		public void FireInput(bool newFireState)
+		{
+			fire = newFireState;
 		}
 
 		public void SprintInput(bool newSprintState)

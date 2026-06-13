@@ -745,7 +745,7 @@ CapsuleCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5000001
   m_Height: 2
@@ -1650,7 +1650,7 @@ Transform:
   m_GameObject: {fileID: 4635943162753486610}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.70710576, z: -0, w: 0.7071079}
-  m_LocalPosition: {x: -7, y: 1.375, z: -0.20002055}
+  m_LocalPosition: {x: -6.999998, y: 1.375, z: -1.0000205}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1714,7 +1714,7 @@ MonoBehaviour:
   Damping: {x: 0.1, y: 0.25, z: 0.3}
   ShoulderOffset: {x: 1, y: 0, z: 0}
   VerticalArmLength: 0
-  CameraSide: 0.6
+  CameraSide: 1
   CameraDistance: 7
   AvoidObstacles:
     Enabled: 1
@@ -1952,6 +1952,7 @@ GameObject:
   - component: {fileID: 3849205041736059348}
   - component: {fileID: 7888870423227802977}
   - component: {fileID: 1113369256212864554}
+  - component: {fileID: 1557757072846507434}
   m_Layer: 8
   m_Name: Robot
   m_TagString: Player
@@ -2090,6 +2091,7 @@ MonoBehaviour:
   analogMovement: 0
   cursorLocked: 1
   cursorInputForLook: 1
+  fire: 0
 --- !u!114 &7477988938871578672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2234,6 +2236,26 @@ MonoBehaviour:
   yThreshold: -5
   vCam: {fileID: 6712355593683709296}
   respawnSound: {fileID: 8300000, guid: 55462452cb80442b6acf85f10b161e13, type: 3}
+--- !u!114 &1557757072846507434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5633379113638269974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d55bea6b2753f0c0be7ccb38835ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FreezeGun
+  TargetMask:
+    serializedVersion: 2
+    m_Bits: 64
+  MaxDistance: 50
+  FireAudioClip: {fileID: 0}
+  FireAudioVolume: 1
+  WeaponObject: {fileID: 2340350793214442542}
+  FreezeDuration: 5
 --- !u!1 &5744773588333972899
 GameObject:
   m_ObjectHideFlags: 0
@@ -2261,8 +2283,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5744773588333972899}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.70710576, z: -0, w: 0.7071079}
-  m_LocalPosition: {x: -7, y: 1.375, z: -0.20002049}
+  m_LocalRotation: {x: 0, y: 0.70710576, z: 0, w: 0.7071079}
+  m_LocalPosition: {x: -6.999998, y: 1.375, z: -1.0000205}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
