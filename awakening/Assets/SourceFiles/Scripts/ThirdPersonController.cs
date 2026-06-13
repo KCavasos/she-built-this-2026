@@ -27,6 +27,8 @@ namespace StarterAssets
 
         [Tooltip("Acceleration and deceleration")]
         public float SpeedChangeRate = 10.0f;
+
+        public float ImpulseVelocityDecayRate = 0.9f;
         
         [Tooltip("Acceleration and deceleration")]
         public float DecelerationRate = 4.0f;
@@ -85,11 +87,11 @@ namespace StarterAssets
         private float _cinemachineTargetPitch;
 
         // Camera starting position and rotation
-private Vector3 _cameraStartingPosition;
-private Quaternion _cameraStartingRotation;
+        private Vector3 _cameraStartingPosition;
+        private Quaternion _cameraStartingRotation;
 
-// Variable to indicate if we are resetting the camera 
-public bool IsRespawning { get; set; } = false;
+        // Variable to indicate if we are resetting the camera 
+        public bool IsRespawning { get; set; } = false;
 
 
         // player
@@ -99,6 +101,8 @@ public bool IsRespawning { get; set; } = false;
         private float _rotationVelocity;
         private float _verticalVelocity;
         private float _terminalVelocity = 53.0f;
+
+        private Vector3 impulseVelocity = new Vector3();
 
         // timeout deltatime
         private float _jumpTimeoutDelta;
@@ -304,8 +308,8 @@ public bool IsRespawning { get; set; } = false;
             Vector3 targetDirection = Quaternion.Euler(0.0f, _targetRotation, 0.0f) * Vector3.forward;
 
             // move the player
-            _controller.Move(targetDirection.normalized * (_speed * Time.deltaTime) +
-                             new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
+            _controller.Move(
+                targetDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime + (impulseVelocity * Time.deltaTime));
 
             // update animator if using character
             if (_hasAnimator)
@@ -313,6 +317,9 @@ public bool IsRespawning { get; set; } = false;
                 _animator.SetFloat(_animIDSpeed, _animationBlend);
                 _animator.SetFloat(_animIDMotionSpeed, inputMagnitude);
             }
+            
+            //decay impulse velocity;
+            impulseVelocity *= ImpulseVelocityDecayRate * Time.deltaTime;
         }
 
         private void JumpAndGravity()
@@ -425,17 +432,22 @@ public bool IsRespawning { get; set; } = false;
             }
         }
         public void ResetCameraRotation(float targetYaw)
-{
-    // Reset the yaw and pitch to default values (targetYaw for Y rotation, and 0 for pitch)
-    _cinemachineTargetYaw = targetYaw;
-    _cinemachineTargetPitch = 0f;
+        {
+            // Reset the yaw and pitch to default values (targetYaw for Y rotation, and 0 for pitch)
+            _cinemachineTargetYaw = targetYaw;
+            _cinemachineTargetPitch = 0f;
 
-    // Reset the camera target's rotation explicitly
-    CinemachineCameraTarget.transform.rotation = Quaternion.Euler(_cinemachineTargetPitch, _cinemachineTargetYaw, 0f);
+            // Reset the camera target's rotation explicitly
+            CinemachineCameraTarget.transform.rotation = Quaternion.Euler(_cinemachineTargetPitch, _cinemachineTargetYaw, 0f);
 
-    Debug.Log($"Camera Yaw reset to {targetYaw} degrees.");
-}
+            Debug.Log($"Camera Yaw reset to {targetYaw} degrees.");
+        }
+
+        public void ApplyForce(Vector3 force)
+        {
+            Debug.Log($"APply force called with {force}");
+            impulseVelocity += force;
+        }
+        
     }
-
-    
 }
