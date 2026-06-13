@@ -13,6 +13,16 @@ awakening/[Bb]uild/
 awakening/[Bb]uilds/
 awakening/[Ll]ogs/
 awakening/[Uu]ser[Ss]ettings/
+
+Awake2/[Ll]ibrary/
+Awake2/[Tt]emp/
+Awake2/[Oo]bj/
+Awake2/[Bb]uild/
+Awake2/[Bb]uilds/
+Awake2/[Ll]ogs/
+Awake2/[Uu]ser[Ss]ettings/
+Awake2/Assets/Tutorials/
+
 *.log
 
 # By default unity supports Blender asset imports, *.blend1 blender files do not need to be commited to version control.
