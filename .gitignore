@@ -14,14 +14,14 @@ awakening/[Bb]uilds/
 awakening/[Ll]ogs/
 awakening/[Uu]ser[Ss]ettings/
 
-Awake2/[Ll]ibrary/
-Awake2/[Tt]emp/
-Awake2/[Oo]bj/
-Awake2/[Bb]uild/
-Awake2/[Bb]uilds/
-Awake2/[Ll]ogs/
-Awake2/[Uu]ser[Ss]ettings/
-Awake2/Assets/Tutorials/
+Awake2/Awake2/[Ll]ibrary/
+Awake2/Awake2/[Tt]emp/
+Awake2/Awake2/[Oo]bj/
+Awake2/Awake2/[Bb]uild/
+Awake2/Awake2/[Bb]uilds/
+Awake2/Awake2/[Ll]ogs/
+Awake2/Awake2/[Uu]ser[Ss]ettings/
+Awake2/Awake2/Assets/Tutorials/
 
 *.log
 
