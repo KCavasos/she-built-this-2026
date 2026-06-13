@@ -28,6 +28,11 @@ namespace StarterAssets
         [Tooltip("Acceleration and deceleration")]
         public float SpeedChangeRate = 10.0f;
 
+        public float ImpulseVelocityDecayRate = 0.9f;
+        
+        [Tooltip("Acceleration and deceleration")]
+        public float DecelerationRate = 4.0f;
+
         public AudioClip LandingAudioClip;
         public AudioClip[] FootstepAudioClips;
         [Range(0, 1)] public float FootstepAudioVolume = 0.5f;
@@ -82,11 +87,11 @@ namespace StarterAssets
         private float _cinemachineTargetPitch;
 
         // Camera starting position and rotation
-private Vector3 _cameraStartingPosition;
-private Quaternion _cameraStartingRotation;
+        private Vector3 _cameraStartingPosition;
+        private Quaternion _cameraStartingRotation;
 
-// Variable to indicate if we are resetting the camera 
-public bool IsRespawning { get; set; } = false;
+        // Variable to indicate if we are resetting the camera 
+        public bool IsRespawning { get; set; } = false;
 
 
         // player
@@ -96,6 +101,8 @@ public bool IsRespawning { get; set; } = false;
         private float _rotationVelocity;
         private float _verticalVelocity;
         private float _terminalVelocity = 53.0f;
+
+        private Vector3 impulseVelocity = new Vector3();
 
         // timeout deltatime
         private float _jumpTimeoutDelta;
@@ -132,7 +139,6 @@ public bool IsRespawning { get; set; } = false;
             }
         }
 
-
         private void Awake()
         {
             // get a reference to our main camera
@@ -143,28 +149,28 @@ public bool IsRespawning { get; set; } = false;
         }
 
         private void Start()
-{
-    _cinemachineTargetYaw = CinemachineCameraTarget.transform.rotation.eulerAngles.y;
+        {
+            _cinemachineTargetYaw = CinemachineCameraTarget.transform.rotation.eulerAngles.y;
 
-    _hasAnimator = TryGetComponent(out _animator);
-    _controller = GetComponent<CharacterController>();
-    _input = GetComponent<StarterAssetsInputs>();
-#if ENABLE_INPUT_SYSTEM 
-    _playerInput = GetComponent<PlayerInput>();
-#else
-	Debug.LogError("Starter Assets package is missing dependencies. Please use Tools/Starter Assets/Reinstall Dependencies to fix it");
-#endif
-    
-    AssignAnimationIDs();
+            _hasAnimator = TryGetComponent(out _animator);
+            _controller = GetComponent<CharacterController>();
+            _input = GetComponent<StarterAssetsInputs>();
+        #if ENABLE_INPUT_SYSTEM 
+            _playerInput = GetComponent<PlayerInput>();
+        #else
+	        Debug.LogError("Starter Assets package is missing dependencies. Please use Tools/Starter Assets/Reinstall Dependencies to fix it");
+        #endif
+            
+            AssignAnimationIDs();
 
-    // Save the starting camera position and rotation
-    _cameraStartingPosition = CinemachineCameraTarget.transform.position;
-    _cameraStartingRotation = CinemachineCameraTarget.transform.rotation;
+            // Save the starting camera position and rotation
+            _cameraStartingPosition = CinemachineCameraTarget.transform.position;
+            _cameraStartingRotation = CinemachineCameraTarget.transform.rotation;
 
-    // reset our timeouts on start
-    _jumpTimeoutDelta = JumpTimeout;
-    _fallTimeoutDelta = FallTimeout;
-}
+            // reset our timeouts on start
+            _jumpTimeoutDelta = JumpTimeout;
+            _fallTimeoutDelta = FallTimeout;
+        }
 
         private void Update()
         {
@@ -205,39 +211,39 @@ public bool IsRespawning { get; set; } = false;
         }
 
         private void CameraRotation()
-{
-    // if respawning, reset to starting position and rotation
-    if (IsRespawning)
-    {
-        _cinemachineTargetYaw = 0f; // Reset yaw to zero (or configure as needed)
-        _cinemachineTargetPitch = 0f;
+        {
+            // if respawning, reset to starting position and rotation
+            if (IsRespawning)
+            {
+                _cinemachineTargetYaw = 0f; // Reset yaw to zero (or configure as needed)
+                _cinemachineTargetPitch = 0f;
 
-        // Reset Cinemachine Camera Target to its starting state
-        CinemachineCameraTarget.transform.position = _cameraStartingPosition;
-        CinemachineCameraTarget.transform.rotation = _cameraStartingRotation;
+                // Reset Cinemachine Camera Target to its starting state
+                CinemachineCameraTarget.transform.position = _cameraStartingPosition;
+                CinemachineCameraTarget.transform.rotation = _cameraStartingRotation;
 
-        IsRespawning = false; // Reset the respawning flag
-        return;
-    }
+                IsRespawning = false; // Reset the respawning flag
+                return;
+            }
 
-    // if there is an input and camera position is not fixed
-    if (_input.look.sqrMagnitude >= _threshold && !LockCameraPosition)
-    {
-        float deltaTimeMultiplier = IsCurrentDeviceMouse ? 1.0f : Time.deltaTime;
+            // if there is an input and camera position is not fixed
+            if (_input.look.sqrMagnitude >= _threshold && !LockCameraPosition)
+            {
+                float deltaTimeMultiplier = IsCurrentDeviceMouse ? 1.0f : Time.deltaTime;
 
-        _cinemachineTargetYaw += _input.look.x * deltaTimeMultiplier * LookSensitivity.x;
-        _cinemachineTargetPitch += _input.look.y * deltaTimeMultiplier * LookSensitivity.y;
-    }
+                _cinemachineTargetYaw += _input.look.x * deltaTimeMultiplier * LookSensitivity.x;
+                _cinemachineTargetPitch += _input.look.y * deltaTimeMultiplier * LookSensitivity.y;
+            }
 
-    _cinemachineTargetYaw = ClampAngle(_cinemachineTargetYaw, float.MinValue, float.MaxValue);
-    _cinemachineTargetPitch = ClampAngle(_cinemachineTargetPitch, BottomClamp, TopClamp);
+            _cinemachineTargetYaw = ClampAngle(_cinemachineTargetYaw, float.MinValue, float.MaxValue);
+            _cinemachineTargetPitch = ClampAngle(_cinemachineTargetPitch, BottomClamp, TopClamp);
 
-    CinemachineCameraTarget.transform.rotation = Quaternion.Euler(
-        _cinemachineTargetPitch + CameraAngleOverride,
-        _cinemachineTargetYaw,
-        0.0f
-    );
-}
+            CinemachineCameraTarget.transform.rotation = Quaternion.Euler(
+                _cinemachineTargetPitch + CameraAngleOverride,
+                _cinemachineTargetYaw,
+                0.0f
+            );
+        }
 
         private void Move()
         {
@@ -270,7 +276,12 @@ public bool IsRespawning { get; set; } = false;
             }
             else
             {
-                _speed = targetSpeed;
+                //_speed = targetSpeed;
+                _speed = Mathf.Lerp(currentHorizontalSpeed, targetSpeed,
+                    Time.deltaTime * SpeedChangeRate);
+
+                // round speed to 3 decimal places
+                _speed = Mathf.Round(_speed * 1000f) / 1000f;
             }
 
             _animationBlend = Mathf.Lerp(_animationBlend, targetSpeed, Time.deltaTime * SpeedChangeRate);
@@ -296,8 +307,8 @@ public bool IsRespawning { get; set; } = false;
             Vector3 targetDirection = Quaternion.Euler(0.0f, _targetRotation, 0.0f) * Vector3.forward;
 
             // move the player
-            _controller.Move(targetDirection.normalized * (_speed * Time.deltaTime) +
-                             new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
+            _controller.Move(
+                targetDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime + (impulseVelocity * Time.deltaTime));
 
             // update animator if using character
             if (_hasAnimator)
@@ -305,6 +316,9 @@ public bool IsRespawning { get; set; } = false;
                 _animator.SetFloat(_animIDSpeed, _animationBlend);
                 _animator.SetFloat(_animIDMotionSpeed, inputMagnitude);
             }
+            
+            //decay impulse velocity;
+            impulseVelocity *= ImpulseVelocityDecayRate * Time.deltaTime;
         }
 
         private void JumpAndGravity()
@@ -417,17 +431,22 @@ public bool IsRespawning { get; set; } = false;
             }
         }
         public void ResetCameraRotation(float targetYaw)
-{
-    // Reset the yaw and pitch to default values (targetYaw for Y rotation, and 0 for pitch)
-    _cinemachineTargetYaw = targetYaw;
-    _cinemachineTargetPitch = 0f;
+        {
+            // Reset the yaw and pitch to default values (targetYaw for Y rotation, and 0 for pitch)
+            _cinemachineTargetYaw = targetYaw;
+            _cinemachineTargetPitch = 0f;
 
-    // Reset the camera target's rotation explicitly
-    CinemachineCameraTarget.transform.rotation = Quaternion.Euler(_cinemachineTargetPitch, _cinemachineTargetYaw, 0f);
+            // Reset the camera target's rotation explicitly
+            CinemachineCameraTarget.transform.rotation = Quaternion.Euler(_cinemachineTargetPitch, _cinemachineTargetYaw, 0f);
 
-    Debug.Log($"Camera Yaw reset to {targetYaw} degrees.");
-}
+            Debug.Log($"Camera Yaw reset to {targetYaw} degrees.");
+        }
+
+        public void ApplyForce(Vector3 force)
+        {
+            Debug.Log($"APply force called with {force}");
+            impulseVelocity += force;
+        }
+        
     }
-
-    
 }

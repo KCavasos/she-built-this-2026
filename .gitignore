@@ -23,6 +23,9 @@ Awake2/Awake2/[Ll]ogs/
 Awake2/Awake2/[Uu]ser[Ss]ettings/
 Awake2/Awake2/Assets/Tutorials/
 
+# so I don't stomp windows packages
+Awake2/Awake2/Packages/*.json
+Awake2/Awake2/.idea/
 *.log
 
 # By default unity supports Blender asset imports, *.blend1 blender files do not need to be commited to version control.

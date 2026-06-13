@@ -2256,6 +2256,7 @@ MonoBehaviour:
   FireAudioVolume: 1
   WeaponObject: {fileID: 2340350793214442542}
   FreezeDuration: 5
+  BulletPrefab: {fileID: 5953667980207969210, guid: 3f556b44fbe3e3feab2c64725ff5919b, type: 3}
 --- !u!1 &5744773588333972899
 GameObject:
   m_ObjectHideFlags: 0
