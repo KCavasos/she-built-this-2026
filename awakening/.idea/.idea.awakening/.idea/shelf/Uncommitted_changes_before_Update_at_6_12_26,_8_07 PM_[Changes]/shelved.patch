@@ -1,0 +1,131 @@
+Index: .idea/.idea.awakening/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"ddad04f2-bc52-4fec-b3e9-908ee37d3d14\" name=\"Changes\" comment=\"\">\n      <change beforePath=\"$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions.meta\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/Prefabs.meta\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Assets/Prefabs.meta\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/Prefabs/Character.prefab\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/Prefabs/Character.prefab.meta\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/Readme.asset\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/Readme.asset.meta\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/Scenes.meta\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Assets/Scenes.meta\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/Scenes/SampleScene.unity\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/Settings.meta\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Assets/Settings.meta\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/Settings/DefaultVolumeProfile.asset\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/Settings/DefaultVolumeProfile.asset.meta\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/Settings/Mobile_RPAsset.asset\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/Settings/Mobile_RPAsset.asset.meta\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/Settings/Mobile_Renderer.asset\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/Settings/Mobile_Renderer.asset.meta\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/Settings/PC_RPAsset.asset\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/Settings/PC_RPAsset.asset.meta\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/Settings/PC_Renderer.asset\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/Settings/PC_Renderer.asset.meta\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset.meta\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset.meta\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/TutorialInfo.meta\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/TutorialInfo/Icons.meta\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/TutorialInfo/Icons/URP.png\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/TutorialInfo/Icons/URP.png.meta\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/TutorialInfo/Layout.wlt\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/TutorialInfo/Layout.wlt.meta\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/TutorialInfo/Scripts.meta\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor.meta\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs.meta\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Readme.cs\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Readme.cs.meta\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Packages/manifest.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Packages/manifest.json\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Packages/packages-lock.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Packages/packages-lock.json\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/ProjectSettings/EditorSettings.asset\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ProjectSettings/EditorSettings.asset\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/ProjectSettings/TagManager.asset\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ProjectSettings/TagManager.asset\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$/..\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\">{\n  &quot;lastFilter&quot;: {\n    &quot;state&quot;: &quot;OPEN&quot;,\n    &quot;assignee&quot;: &quot;KCavasos&quot;\n  }\n}</component>\n  <component name=\"GithubPullRequestsUISettings\">{\n  &quot;selectedUrlAndAccountId&quot;: {\n    &quot;url&quot;: &quot;https://github.com/KCavasos/she-built-this-2026.git&quot;,\n    &quot;accountId&quot;: &quot;dda0243d-78d2-4628-b584-db64c0e221e8&quot;\n  }\n}</component>\n  <component name=\"MetaFilesCheckinStateConfiguration\" checkMetaFiles=\"true\" />\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 2,\n  &quot;fromUser&quot;: false\n}</component>\n  <component name=\"ProjectId\" id=\"3F3Px9U4DspAr2bOt56VqmjCF1B\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,\n    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,\n    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\n  }\n}</component>\n  <component name=\"RunManager\" selected=\"Attach to Unity Editor.Attach to Unity Editor\">\n    <configuration name=\"Start Unity\" type=\"RunUnityExe\" factoryName=\"Unity Executable\">\n      <option name=\"EXE_PATH\" value=\"$USER_HOME$/Unity/Hub/Editor/6000.4.11f1/Editor/Unity\" />\n      <option name=\"PROGRAM_PARAMETERS\" value=\"-projectPath $PROJECT_DIR$ -debugCodeOptimization\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\n      <option name=\"PASS_PARENT_ENVS\" value=\"1\" />\n      <option name=\"ENV_FILE_PATHS\" value=\"\" />\n      <option name=\"REDIRECT_INPUT_PATH\" value=\"\" />\n      <option name=\"MIXED_MODE_DEBUG\" value=\"0\" />\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"Unit Tests (batch mode)\" type=\"RunUnityExe\" factoryName=\"Unity Executable\">\n      <option name=\"EXE_PATH\" value=\"$USER_HOME$/Unity/Hub/Editor/6000.4.11f1/Editor/Unity\" />\n      <option name=\"PROGRAM_PARAMETERS\" value=\"-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\n      <option name=\"PASS_PARENT_ENVS\" value=\"1\" />\n      <option name=\"ENV_FILE_PATHS\" value=\"\" />\n      <option name=\"REDIRECT_INPUT_PATH\" value=\"\" />\n      <option name=\"MIXED_MODE_DEBUG\" value=\"0\" />\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"Attach to Unity Editor\" type=\"UNITY_DEBUG_RUN_CONFIGURATION\" factoryName=\"Unity Debug\" show_console_on_std_err=\"false\" show_console_on_std_out=\"false\" port=\"50000\" address=\"localhost\" useMixedMode=\"false\">\n      <option name=\"allowRunningInParallel\" value=\"false\" />\n      <option name=\"listenPortForConnections\" value=\"false\" />\n      <option name=\"pid\" />\n      <option name=\"projectPathOnTarget\" />\n      <option name=\"runtimes\">\n        <list />\n      </option>\n      <option name=\"selectedOptions\">\n        <list />\n      </option>\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"Attach to\" type=\"UnityDevicePlayer\" factoryName=\"UnityAttachToDevicePlayer\">\n      <method v=\"2\" />\n    </configuration>\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"ddad04f2-bc52-4fec-b3e9-908ee37d3d14\" name=\"Changes\" comment=\"\" />\n      <created>1781301024489</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1781301024489</updated>\n      <workItem from=\"1781301025866\" duration=\"5662000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"adding prefab folder (and testing rider plugin)\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1781301542919</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1781301542920</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"test2 (rider)\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1781301782395</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1781301782395</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"test2 (rider)\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1781301842503</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1781301842503</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"4\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"UnityCheckinConfiguration\" checkUnsavedScenes=\"true\" />\n  <component name=\"UnityProjectConfiguration\" hasMinimizedUI=\"true\" />\n  <component name=\"UnityProjectDiscoverer\">\n    <option name=\"hasUnityReference\" value=\"true\" />\n    <option name=\"unityProject\" value=\"true\" />\n    <option name=\"unityProjectFolder\" value=\"true\" />\n  </component>\n  <component name=\"UnityUnitTestConfiguration\" currentTestLauncher=\"Both\" />\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <option name=\"CLEAR_INITIAL_COMMIT_MESSAGE\" value=\"true\" />\n    <MESSAGE value=\"adding prefab folder (and testing rider plugin)\" />\n    <MESSAGE value=\"gitignore update too\" />\n    <MESSAGE value=\"test2 (rider)\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"test2 (rider)\" />\n  </component>\n  <component name=\"XDebuggerManager\">\n    <breakpoint-manager>\n      <breakpoints>\n        <breakpoint enabled=\"true\" type=\"DotNet_Exception_Breakpoints\">\n          <properties exception=\"System.OperationCanceledException\" breakIfHandledByOtherCode=\"false\" displayValue=\"System.OperationCanceledException\" />\n          <option name=\"timeStamp\" value=\"1\" />\n        </breakpoint>\n        <breakpoint enabled=\"true\" type=\"DotNet_Exception_Breakpoints\">\n          <properties exception=\"System.Threading.Tasks.TaskCanceledException\" breakIfHandledByOtherCode=\"false\" displayValue=\"System.Threading.Tasks.TaskCanceledException\" />\n          <option name=\"timeStamp\" value=\"2\" />\n        </breakpoint>\n        <breakpoint enabled=\"true\" type=\"DotNet_Exception_Breakpoints\">\n          <properties exception=\"System.Threading.ThreadAbortException\" breakIfHandledByOtherCode=\"false\" displayValue=\"System.Threading.ThreadAbortException\" />\n          <option name=\"timeStamp\" value=\"3\" />\n        </breakpoint>\n      </breakpoints>\n    </breakpoint-manager>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.awakening/.idea/workspace.xml b/.idea/.idea.awakening/.idea/workspace.xml
+--- a/.idea/.idea.awakening/.idea/workspace.xml	(revision faaa1966e3801e74124c6fcafdbfee6547fc7c2a)
++++ b/.idea/.idea.awakening/.idea/workspace.xml	(date 1781320022389)
+@@ -2,50 +2,11 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="ddad04f2-bc52-4fec-b3e9-908ee37d3d14" name="Changes" comment="">
+-      <change beforePath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions.meta" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs.meta" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Character.prefab" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Character.prefab.meta" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Readme.asset" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Readme.asset.meta" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Scenes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes.meta" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Settings.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings.meta" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Settings/DefaultVolumeProfile.asset" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Settings/DefaultVolumeProfile.asset.meta" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Settings/Mobile_RPAsset.asset" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Settings/Mobile_RPAsset.asset.meta" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Settings/Mobile_Renderer.asset" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Settings/Mobile_Renderer.asset.meta" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Settings/PC_RPAsset.asset" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Settings/PC_RPAsset.asset.meta" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Settings/PC_Renderer.asset" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Settings/PC_Renderer.asset.meta" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset.meta" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset.meta" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo.meta" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Icons.meta" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Icons/URP.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Icons/URP.png.meta" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Layout.wlt" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Layout.wlt.meta" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts.meta" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor.meta" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs.meta" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Readme.cs" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Readme.cs.meta" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites.meta" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/.idea.awakening/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.awakening/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayerRobot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerRobot.prefab" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene/MainScene.unity" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Assets/SourceFiles/Scripts/ThirdPersonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SourceFiles/Scripts/ThirdPersonController.cs" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -67,6 +28,10 @@
+     &quot;accountId&quot;: &quot;dda0243d-78d2-4628-b584-db64c0e221e8&quot;
+   }
+ }</component>
++  <component name="HighlightingSettingsPerFile">
++    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RotatingPlatform.cs" root0="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/Assets/SourceFiles/InputSystem/StarterAssets.inputactions" root0="FORCE_HIGHLIGHTING" />
++  </component>
+   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+   <component name="ProjectColorInfo">{
+   &quot;associatedIndex&quot;: 2,
+@@ -137,7 +102,7 @@
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+       <updated>1781301024489</updated>
+-      <workItem from="1781301025866" duration="5662000" />
++      <workItem from="1781301025866" duration="12404000" />
+     </task>
+     <task id="LOCAL-00001" summary="adding prefab folder (and testing rider plugin)">
+       <option name="closed" value="true" />
+@@ -163,7 +128,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1781301842503</updated>
+     </task>
+-    <option name="localTasksCounter" value="4" />
++    <task id="LOCAL-00004" summary="Adding robot starter package&#10;Working on main scene">
++      <option name="closed" value="true" />
++      <created>1781310791771</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1781310791771</updated>
++    </task>
++    <option name="localTasksCounter" value="5" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -193,7 +166,8 @@
+     <MESSAGE value="adding prefab folder (and testing rider plugin)" />
+     <MESSAGE value="gitignore update too" />
+     <MESSAGE value="test2 (rider)" />
+-    <option name="LAST_COMMIT_MESSAGE" value="test2 (rider)" />
++    <MESSAGE value="Adding robot starter package&#10;Working on main scene" />
++    <option name="LAST_COMMIT_MESSAGE" value="Adding robot starter package&#10;Working on main scene" />
+   </component>
+   <component name="XDebuggerManager">
+     <breakpoint-manager>
+Index: Assets/TextMesh Pro/Sprites.meta
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/TextMesh Pro/Sprites.meta b/Assets/TextMesh Pro/Sprites.meta
+new file mode 100644
+--- /dev/null	(date 1781244747832)
++++ b/Assets/TextMesh Pro/Sprites.meta	(date 1781244747832)
+@@ -0,0 +1,8 @@
++fileFormatVersion: 2
++guid: d0603b6d5186471b96c778c3949c7ce2
++folderAsset: yes
++DefaultImporter:
++  externalObjects: {}
++  userData: 
++  assetBundleName: 
++  assetBundleVariant: 
