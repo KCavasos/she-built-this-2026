@@ -58,13 +58,11 @@ namespace StarterAssets
 		}
 #endif
 
-			private void Awake()
-	{
-		SetCursorState(cursorLocked);
-		Cursor.visible = false;
-
-		
-	}
+		private void Awake()
+		{
+			//SetCursorState(cursorLocked);
+			Cursor.visible = false;
+		}
 
 		public void MoveInput(Vector2 newMoveDirection)
 		{
@@ -93,7 +91,12 @@ namespace StarterAssets
 
 		private void OnApplicationFocus(bool hasFocus)
 		{
-			SetCursorState(cursorLocked);
+			Debug.Log("Application Focus: " + hasFocus);
+			// if (SequenceManager.Instance.isInDialogue == false)
+			// {
+			// 	SetCursorState(cursorLocked);
+			// }
+				
 		}
 
 		private void SetCursorState(bool newState)

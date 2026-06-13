@@ -212,6 +212,11 @@ namespace StarterAssets
 
         private void CameraRotation()
         {
+            if (SequenceManager.Instance.isInDialogue)
+            {
+                return;
+            }
+            
             // if respawning, reset to starting position and rotation
             if (IsRespawning)
             {

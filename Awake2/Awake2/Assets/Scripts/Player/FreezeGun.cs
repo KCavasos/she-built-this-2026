@@ -45,6 +45,11 @@ public class FreezeGun : MonoBehaviour
 
     public void FireWeapon()
     {
+        if (SequenceManager.Instance.isInDialogue)
+        {
+            return;
+        }
+        
         if (_mainCamera == null)
         {
             _mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
